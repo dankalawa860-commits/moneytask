@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MoneyTask</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
 <h1>MoneyTask</h1>
+
+<h2>Create Account</h2>
+
+<input type="text" id="name" placeholder="Full Name"><br><br>
+
+<input type="email" id="email" placeholder="Email"><br><br>
+
+<input type="password" id="password" placeholder="Password"><br><br>
+
+<button onclick="signup()">Sign Up</button>
+
+<hr>
 
 <h2>Available Tasks</h2>
 
@@ -21,10 +23,7 @@
 <h2>Total Balance: $<span id="balance">0</span></h2>
 
 <a href="withdraw.html">
-  <button>Withdraw</button>
+<button>Withdraw</button>
 </a>
 
 <script src="script.js"></script>
-
-</body>
-</html>
