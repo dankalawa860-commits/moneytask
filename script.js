@@ -1,7 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.querySelector("button");
+let balance = 0;
 
-  button.addEventListener("click", () => {
-    alert("Task feature coming soon!");
-  });
+const button = document.querySelector("button");
+const balanceText = document.querySelectorAll("h1")[1];
+
+button.addEventListener("click", () => {
+  balance += 1;
+  balanceText.innerText = "$" + balance;
 });
