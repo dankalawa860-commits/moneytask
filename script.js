@@ -1,12 +1,7 @@
-let balance = Number(localStorage.getItem("balance")) || 0;
-
-const balanceText = document.querySelectorAll("h1")[1];
-
-balanceText.innerHTML = "$" + balance;
+let balance = 0;
 
 function completeTask(amount) {
   balance += amount;
-  balanceText.innerHTML = "$" + balance;
-  localStorage.setItem("balance", balance);
+  document.getElementById("balance").textContent = balance;
   alert("Task Completed! +$" + amount);
 }
