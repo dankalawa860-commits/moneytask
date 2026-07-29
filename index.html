@@ -1,7 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoneyTask</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>MoneyTask</h1>
+
 <h2>Available Tasks</h2>
 
 <button onclick="completeTask(1)">Watch Video (+$1)</button><br><br>
 
 <button onclick="completeTask(2)">Visit Website (+$2)</button><br><br>
 
-<button onclick="completeTask(5)">Complete Survey (+$5)</button>
+<button onclick="completeTask(5)">Complete Survey (+$5)</button><br><br>
+
+<h2>Total Balance: $<span id="balance">0</span></h2>
+
+<a href="withdraw.html">
+  <button>Withdraw</button>
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
